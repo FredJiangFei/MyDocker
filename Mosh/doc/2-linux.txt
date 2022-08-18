@@ -1,0 +1,53 @@
+# distribution
+Ubuntu
+Debian
+CentOS
+....
+
+# Ubuntu cmd
+docker run -it ubuntu
+
+### echo hello
+### whoami
+### history
+### !2
+
+
+# Manage packages
+### apt update
+### apt install nano
+### apt remove nano
+
+# Linux File System
+bin / root / boot / lib ....
+
+# Navigating the File System
+### pwd(Print Working Directory)
+
+### ls
+### ls -1 一行一个显示
+### ls -l 
+
+### cd etc/apt 相对路径
+### cd /etc/apt 绝对路径
+### cd ..
+### cd ~
+root用户，cd ~ 相当于 cd /root
+普通用户，cd ~ 相当于cd /home/当前用户名
+
+# Manipulating Files and Directories
+### mkdir 创建文件夹
+mkdir test 
+
+### mv 重命名文件(夹)
+mv test docker
+mv hello.txt hello-world.txt
+
+### touch 创建文件
+touch hello.txt
+touch t1.txt t2.txt
+
+### rm 删除文件
+rm hello.txt
+rm file*.txt
+rm -r docker 递归删除文件夹
