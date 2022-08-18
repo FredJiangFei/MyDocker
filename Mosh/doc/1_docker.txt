@@ -1,0 +1,6 @@
+# docker in action
+docker build -t hello-docker .
+docker run hello-docker
+
+# play with docker
+https://labs.play-with-docker.com/
