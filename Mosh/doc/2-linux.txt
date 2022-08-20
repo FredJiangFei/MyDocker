@@ -68,7 +68,6 @@ head -n 5 /etc/adduser.conf
 ### tail
 tail -n 5 /etc/adduser.conf
 
-
 #################### redirection ####################
 ### >
 cat file1.txt > file2.txt (把file1内容写入file2，********会覆盖file2内容*******)
@@ -77,5 +76,36 @@ ls -l /etc > files.txt (把list内容写入files.txt)
 
 #################### searching for text ####################
 ### grep
+grep hello file.txt
+grep -i Hello file.txt (i忽略大小写)
+grep hello file.txt file2.txt
+grep hello *.txt
+grep -r file (r文件夹递归查询)
 
+#################### find files and directories ####################
+### find
+find -type -d
+find -type -f
+find -type -f -name "f*"
+find -type -f -iname "*F*"(i忽略大小写)
+find -type -f -name "*.py"
+
+#################### chain command ####################
+### ; 前面的命令出错，后面继续执行
+mkdir test ; cd test ; echo done
+
+### && 前面的命令出错，后面也不执行
+mkdir test && cd test && echo done
+
+### ||   前面的命令出错，后面的才执行
+mkdir test || echo "directory exists"
+
+### | 前面command的结果，被后面的command执行
+ls /bin | less
+ls /bin | head
+
+### \ 换行
+mkdir test ;\ 
+cd test ;\ 
+echo done;
 
