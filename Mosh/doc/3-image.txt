@@ -1,0 +1,22 @@
+## xxx is 10 times smaller than yyy
+
+####################### build image ###########################
+docker build -t react-app .
+docker run -it react-app sh
+
+
+####################### copy files ###########################
+### COPY 
+COPY . .
+COPY ["hello world.txt", "."]
+
+### ADD
+ADD http://.....file.json . 从网络copyfile
+ADD file.zip . 解压file
+
+
+####################### exclude files ###########################
+### .dockerignore
+
+
+
