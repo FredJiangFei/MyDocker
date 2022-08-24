@@ -110,6 +110,65 @@ cd test ;\
 echo done;
 
 #################### environment variables ####################
-### printenv
-### printenv PATH
+### printenv 打印变量
+printenv PATH
+
 ### echo $PATH
+
+### export 设置变量
+export DB_USER=fred
+
+### >> 追加内容
+### > 替换内容
+
+# .bashrc 写入bashrc的变量只会在下次打开终端才生效
+source .bashrc 刷新bashrc
+
+#################### Manage process ####################
+### ps
+### sleep
+### kill
+
+#################### Manage user ####################
+### useradd
+useradd -m fred
+cat /etc/passwd 查看用户信息
+cat /etc/shadow
+
+### login
+docker exec -it -u fred 2f75 bash
+
+### usermod
+usermod -G developers fred
+
+### userdel
+userdel fred
+
+### adduser
+
+#################### Manage group ####################
+### groupadd developers
+### groups fred 查看fred是哪些group下的
+
+### groupmod
+### groupdel
+
+#################### File permission ####################
+echo echo hello > deploy.sh
+
+#ls -l
+-rwxr--r-x
+drwxr-x---
+1. 以 - 开头为 file / 以 d 开头为 directory
+
+rwx(owner)r--(group)r-x(other)
+rwx(owner)r-x(group)---(other)
+r: read
+w: write
+x: execute
+
+### chmod
+chmod u+x deploy.sh
+chmod o+x deploy.sh
+chmod g+x deploy.sh
+chmod og+x+w-r deploy.sh
