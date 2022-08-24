@@ -16,5 +16,37 @@ ADD file.zip . 解压file
 ####################### exclude files ###########################
 ### .dockerignore
 
+####################### run command ###########################
+### RUN
+RUN npm install
 
+####################### set environment variable ###################
+### ENV
+ENV APL_URL=https://jsonplaceholder.typicode.com/
+
+####################### expose port ###################
+### EXPOSE
+EXPOSE 3000
+
+####################### set user ###################
+
+####################### defind entrypoints ###################
+### CMD
+
+### RUN 和 CMD 区别
+RUN image build 的时候执行
+CMD container run 的时候执行
+
+CMD npm start
+CMD ["npm", "start"]
+
+### ENTRYPOINT
+### CMD 和 ENTRYPOINT 区别
+
+####################### remove image ###################
+### docker image prune
+### docker container prune
+### docker image rm xxx
+
+####################### tag image ###################
 
