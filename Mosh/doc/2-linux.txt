@@ -109,3 +109,7 @@ mkdir test ;\
 cd test ;\ 
 echo done;
 
+#################### environment variables ####################
+### printenv
+### printenv PATH
+### echo $PATH
