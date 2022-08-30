@@ -1,0 +1,13 @@
+####################### clean ########################### 
+### docker image rm $(docker image ls -aq)
+### docker container rm -f $(docker image ls -aq)
+
+####################### build image ########################### 
+### docker-compose build
+### docker-compose build --no-cache
+
+####################### build image ########################### 
+### docker-compose up
+
+####################### docker networking ########################### 
+
