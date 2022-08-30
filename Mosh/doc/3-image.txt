@@ -49,4 +49,13 @@ CMD ["npm", "start"]
 ### docker image rm xxx
 
 ####################### tag image ###################
+### docker build -t react-app:1.0
+### docker image tag react-app:latest react-app:2.0
 
+####################### share image ###################
+### docker login
+### docker push
+
+####################### save and load image ###################
+### docker image save -o react-app.tar react-app:1.0
+### docker image load -i react-app.tar
