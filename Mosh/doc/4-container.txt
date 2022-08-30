@@ -1,0 +1,19 @@
+####################### start container ########################### 
+### docker run -d react-app
+### docker run -d --name blue-sky react-app
+
+
+####################### view log ########################### 
+### docker logs 655
+### docker logs -f 655
+### docker logs -n 5 655
+
+####################### publish port ########################### 
+### docker run -d -p 80:3000 --name blue-sky react-app
+
+####################### stop / start / remove container ########################### 
+### docker stop xxx
+### docker start xxx
+### docker rm xxx
+
+####################### file system ########################### 
