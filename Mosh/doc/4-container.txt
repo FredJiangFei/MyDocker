@@ -17,3 +17,15 @@
 ### docker rm xxx
 
 ####################### file system ########################### 
+
+####################### volume ########################### 
+### docker volume create app-data
+### docker volume inspect app-data
+### dcoker run -d -p 4000:3000 -v app-data:/app/data react-app
+
+####################### copy ########################### 
+### docker cp e1c904:/app/log.txt .
+### docker cp secre.txt e1c904:/app
+
+####################### share ########################### 
+### docker run -d -p 5001:3000 -v $(pwd):/app react-app
