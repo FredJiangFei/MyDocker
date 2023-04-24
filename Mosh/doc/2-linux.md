@@ -1,10 +1,10 @@
-################ distribution ################
+### distribution
 Ubuntu
 Debian
 CentOS
 ....
 
-################ Ubuntu cmd ################
+### Ubuntu cmd 
 docker run -it ubuntu
 
 ### echo hello
@@ -13,15 +13,15 @@ docker run -it ubuntu
 ### !2
 
 
-################ Manage packages ####################
+#### Manage packages
 ### apt update
 ### apt install nano
 ### apt remove nano
 
-################ Linux File System ####################
+#### Linux File System
 bin / root / boot / lib ....
 
-#################### Navigating the File System ####################
+#### Navigating the File System
 ### pwd(Print Working Directory)
 
 ### ls
@@ -35,7 +35,7 @@ bin / root / boot / lib ....
 root用户，cd ~ 相当于 cd /root
 普通用户，cd ~ 相当于cd /home/当前用户名
 
-#################### Manipulating Files and Directories ####################
+### Manipulating Files and Directories
 ### mkdir 创建文件夹
 mkdir test 
 
@@ -52,7 +52,7 @@ rm hello.txt
 rm file*.txt
 rm -r docker 递归删除文件夹
 
-#################### edit / view file ####################
+### edit / view file
 ### nano
 
 ### cat
@@ -68,13 +68,13 @@ head -n 5 /etc/adduser.conf
 ### tail
 tail -n 5 /etc/adduser.conf
 
-#################### redirection ####################
+### redirection
 ### >
 cat file1.txt > file2.txt (把file1内容写入file2，********会覆盖file2内容*******)
 echo hello > hello.txt
 ls -l /etc > files.txt (把list内容写入files.txt)
 
-#################### searching for text ####################
+### searching for text
 ### grep
 grep hello file.txt
 grep -i Hello file.txt (i忽略大小写)
@@ -82,7 +82,7 @@ grep hello file.txt file2.txt
 grep hello *.txt
 grep -r file (r文件夹递归查询)
 
-#################### find files and directories ####################
+#### find files and directories
 ### find
 find -type -d
 find -type -f
@@ -90,7 +90,7 @@ find -type -f -name "f*"
 find -type -f -iname "*F*"(i忽略大小写)
 find -type -f -name "*.py"
 
-#################### chain command ####################
+### chain command
 ### ; 前面的命令出错，后面继续执行
 mkdir test ; cd test ; echo done
 
@@ -124,12 +124,12 @@ export DB_USER=fred
 # .bashrc 写入bashrc的变量只会在下次打开终端才生效
 source .bashrc 刷新bashrc
 
-#################### Manage process ####################
+### ################# Manage process ####################
 ### ps
 ### sleep
 ### kill
 
-#################### Manage user ####################
+### ################# Manage user ####################
 ### useradd
 useradd -m fred
 cat /etc/passwd 查看用户信息
@@ -146,14 +146,14 @@ userdel fred
 
 ### adduser
 
-#################### Manage group ####################
+### ################# Manage group ####################
 ### groupadd developers
 ### groups fred 查看fred是哪些group下的
 
 ### groupmod
 ### groupdel
 
-#################### File permission ####################
+### ################# File permission ####################
 echo echo hello > deploy.sh
 
 #ls -l

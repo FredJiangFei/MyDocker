@@ -8,6 +8,8 @@ COPY package*.json ./
 RUN npm install
 COPY . .
 
+ENV APL_URL=https://jsonplaceholder.typicode.com/
+
 EXPOSE 3000 
 
 CMD ["npm", "start"]
