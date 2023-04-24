@@ -7,6 +7,11 @@ services:
       - 5000:3000
     volumes:
       - ./frontend:/app
+  web-tests:
+    image: vidly_web
+    volumes:
+      - ./frontend:/app
+    command: npm test
   api:
     build: ./backend
     ports:
